@@ -3,19 +3,25 @@
   "repo": "component/datepicker",
   "description": "Datepicker ui component built on component/calendar",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": [
+    "datepicker",
+    "calendar"
+  ],
   "dependencies": {
     "component/calendar": "*",
-    "component/popover": "*",
-    "component/aurora": "*",
-    "component/event": "*"
+    "component/emitter": "*",
+    "component/event": "*",
+    "component/popover": "*"
   },
-  "development": {},
-  "license": "MIT",
+  "development": {
+    "component/aurora-calendar": "*",
+    "component/aurora-popover": "*"
+  },
   "scripts": [
     "index.js"
   ],
   "styles": [
     "datepicker.css"
-  ]
+  ],
+  "license": "MIT"
 }

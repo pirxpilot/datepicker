@@ -17,7 +17,9 @@
     <script>
       var picker = require('datepicker');
       var el = document.querySelector('[name=date]');
-      picker(el);
+      picker(el).on('change', function(v) {
+        el.value = v.toDateString();
+      });
     </script>
   </body>
 </html>
