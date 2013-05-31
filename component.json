@@ -8,7 +8,7 @@
     "calendar"
   ],
   "dependencies": {
-    "code42day/calendar": "pu",
+    "code42day/calendar": "pu-1",
     "component/emitter": "*",
     "component/event": "*",
     "component/popover": "*"
