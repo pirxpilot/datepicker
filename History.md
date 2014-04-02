@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Datepicker</title>
-    <link rel="stylesheet" href="build/build.css">
-  </head>
-  <body>
-    <script src="build/build.js">
-    <script>
-      var datepicker = require('datepicker');
-    </script>
-  </body>
-</html>
+
+0.1.0 / 2014-04-02
+==================
+
+ * update calendar to version without a jquery
