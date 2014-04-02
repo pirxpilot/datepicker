@@ -87,7 +87,7 @@ Datepicker.prototype.onfocus = function() {
 };
 
 Datepicker.prototype.onblur = function() {
-  if (!this.clickOutside.isClicked(this.popover.el[0])) {
+  if (!this.clickOutside.isClicked(this.popover.el)) {
     this.hide();
   }
 };
@@ -117,7 +117,7 @@ Datepicker.prototype.show = function() {
       .on('hide', function() {
         self.emit('hide');
       });
-    this.clickOutside = clickOutside([this.el, this.popover.el[0]], this.hide.bind(this));
+    this.clickOutside = clickOutside([this.el, this.popover.el], this.hide.bind(this));
     this.popover.classname = 'datepicker popover';
     if (this._position) {
       this.popover.position(this._position);
