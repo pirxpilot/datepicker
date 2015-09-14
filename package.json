@@ -1,0 +1,36 @@
+{
+  "name": "code42day-datepicker",
+  "version": "0.1.0",
+  "description": "Datepicker ui component built on component/calendar",
+  "scripts": {
+    "test": "make check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code42day/datepicker.git"
+  },
+  "keywords": [
+    "browser",
+    "datepicker",
+    "calendar"
+  ],
+  "dependencies": {
+    "code42day-calendar": "~0",
+    "component-emitter": "*",
+    "component-event": "*",
+    "popover-component": "*"
+  },
+  "browser": {
+    "calendar": "code42day-calendar",
+    "emitter": "component-emitter",
+    "event": "component-event",
+    "popover": "popover-component"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/code42day/datepicker/issues"
+  },
+  "devDependencies": {
+    "stringify": "^3.1.0"
+  }
+}
