@@ -1,6 +1,6 @@
 {
   "name": "code42day-datepicker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Datepicker ui component built on component/calendar",
   "scripts": {
     "test": "make check"
