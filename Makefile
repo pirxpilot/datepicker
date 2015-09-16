@@ -1,8 +1,9 @@
 PROJECT=datepicker
 SRC=index.js
-CSS=node_modules/popover-component/node_modules/component-tip/tip.css \
+CSS= \
+	node_modules/code42day-picker/node_modules/popover-component/node_modules/component-tip/tip.css \
 	node_modules/code42day-calendar/lib/calendar.css \
-	datepicker.css
+	node_modules/code42day-picker/picker.css
 
 all: check compile
 

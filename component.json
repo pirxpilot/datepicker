@@ -8,20 +8,15 @@
     "calendar"
   ],
   "dependencies": {
-    "code42day/calendar": "0.1.0",
-    "component/emitter": "*",
-    "component/event": "*",
-    "component/popover": "*"
+    "code42day/calendar": "*",
+    "code42day/picker": "*",
+    "component/inherit": "*"
   },
   "development": {
-    "component/aurora-calendar": "*",
-    "component/aurora-popover": "*"
+    "component/aurora-calendar": "*"
   },
   "scripts": [
     "index.js"
-  ],
-  "styles": [
-    "datepicker.css"
   ],
   "license": "MIT"
 }
