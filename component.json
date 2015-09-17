@@ -2,7 +2,7 @@
   "name": "datepicker",
   "repo": "code42day/datepicker",
   "description": "Datepicker ui component built on component/calendar",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "keywords": [
     "datepicker",
     "calendar"
