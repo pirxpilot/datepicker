@@ -1,7 +1,7 @@
 PROJECT=datepicker
 SRC=index.js
 CSS= \
-	node_modules/code42day-picker/node_modules/popover-component/node_modules/component-tip/tip.css \
+	node_modules/code42day-tip/tip.css \
 	node_modules/code42day-calendar/lib/calendar.css \
 	node_modules/code42day-picker/picker.css
 
@@ -25,7 +25,7 @@ build/build.js: $(SRC) | node_modules build
 $(CSS): | node_modules
 
 node_modules: package.json
-	npm install
+	yarn && touch $@
 
 lint:
 	jshint $(SRC)
