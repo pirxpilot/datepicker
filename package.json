@@ -5,17 +5,14 @@
   "scripts": {
     "test": "make check"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/code42day/datepicker.git"
-  },
+  "repository": "code42day/datepicker",
   "keywords": [
     "browser",
     "datepicker",
     "calendar"
   ],
   "dependencies": {
-    "code42day-calendar": "~0",
+    "code42day-calendar": "^1.0.0",
     "code42day-picker": "^1.0.0",
     "component-inherit": "~0"
   },
@@ -25,10 +22,10 @@
     "inherit": "component-inherit"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/code42day/datepicker/issues"
-  },
   "devDependencies": {
     "stringify": "^3.1.0"
-  }
+  },
+  "files": [
+    "index.js"
+  ]
 }
