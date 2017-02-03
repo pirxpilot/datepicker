@@ -72,22 +72,17 @@ clone-component@~0:
   dependencies:
     component-type "*"
 
-code42day-calendar@~0:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/code42day-calendar/-/code42day-calendar-0.2.4.tgz#1768d11d82a69bc30184448b108922589801f5ec"
+code42day-calendar@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/code42day-calendar/-/code42day-calendar-1.0.0.tgz#a1350daa8d2fc44be3e0eef8161609258df74797"
   dependencies:
     bounds "^1.0.1"
     code42day-in-groups-of "^1.0.1"
-    component-bind "*"
     component-classes "*"
     component-domify "*"
     component-emitter "^1.0.0"
     component-event "*"
-    component-type "*"
-    democracyos-normalize "~0"
-    map-component "*"
     range-component "^1.0.0"
-    type-component "~0"
 
 code42day-css@~0:
   version "0.3.1"
@@ -190,10 +185,6 @@ component-matches-selector@~0.1.6:
   dependencies:
     component-query "*"
 
-component-props@*:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/component-props/-/component-props-1.1.1.tgz#f9b7df9b9927b6e6d97c9bd272aa867670f34944"
-
 component-query@*, component-query@~0:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/component-query/-/component-query-0.0.3.tgz#07f49dab7071fa9606725df53e607f468acdaacf"
@@ -216,10 +207,6 @@ constant-case@^1.0.0:
 decamelize@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
-
-democracyos-normalize@~0:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/democracyos-normalize/-/democracyos-normalize-0.0.3.tgz#e52f472e176bc368fdd9239d95934d3e2375ba9d"
 
 domify@^1.3.0:
   version "1.4.0"
@@ -283,12 +270,6 @@ lru-cache@2:
 macgyver@~1.10:
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/macgyver/-/macgyver-1.10.1.tgz#b09d1599d8b36ed5b16f59589515d9d14bc2fd88"
-
-map-component@*:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/map-component/-/map-component-0.0.1.tgz#ca2b1f6ecfaa07d7025c3c0e1f4a772c6ccba902"
-  dependencies:
-    to-function "*"
 
 minimatch@0.3:
   version "0.3.0"
@@ -384,12 +365,6 @@ to-camel-case@^0.2.1:
   dependencies:
     to-space-case "0.1.2"
 
-to-function@*:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/to-function/-/to-function-2.0.6.tgz#7d56cd9c3b92fa8dbd7b22e83d51924de740ebc5"
-  dependencies:
-    component-props "*"
-
 to-no-case@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/to-no-case/-/to-no-case-0.1.1.tgz#cf33c70e0f28168d95e4159abf150e8c542ef9fe"
@@ -399,10 +374,6 @@ to-space-case@0.1.2:
   resolved "https://registry.yarnpkg.com/to-space-case/-/to-space-case-0.1.2.tgz#9a66be3ebe53f2779f687f0262effd1fc5b6d15e"
   dependencies:
     to-no-case "0.1.1"
-
-type-component@~0:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/type-component/-/type-component-0.0.1.tgz#952a6c81c21efd24d13d811d0c8498cb860e1956"
 
 uglify-js@2.4.x:
   version "2.4.24"
