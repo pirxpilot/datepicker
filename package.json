@@ -5,10 +5,7 @@
   "scripts": {
     "test": "make check"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/code42day/datepicker.git"
-  },
+  "repository": "code42day/datepicker",
   "keywords": [
     "browser",
     "datepicker",
@@ -25,10 +22,10 @@
     "inherit": "component-inherit"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/code42day/datepicker/issues"
-  },
   "devDependencies": {
     "stringify": "^3.1.0"
-  }
+  },
+  "files": [
+    "index.js"
+  ]
 }
