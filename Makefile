@@ -1,4 +1,5 @@
 PROJECT=datepicker
+NODE_BIN=./node_modules/.bin
 SRC=index.js
 CSS= \
 	node_modules/code42day-tip/tip.css \
@@ -27,8 +28,8 @@ $(CSS): | node_modules
 node_modules: package.json
 	yarn && touch $@
 
-lint:
-	jshint $(SRC)
+lint: | node_modules
+	$(NODE_BIN)/jshint $(SRC)
 
 clean:
 	rm -fr build node_modules
