@@ -1,4 +1,5 @@
 [![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
 [![Dependency Status][gemnasium-image]][gemnasium-url]
 
 # datepicker
