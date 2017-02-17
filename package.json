@@ -1,11 +1,11 @@
 {
-  "name": "code42day-datepicker",
+  "name": "@pirxpilot/datepicker",
   "version": "1.1.0",
   "description": "Datepicker ui component built on component/calendar",
   "scripts": {
     "test": "make check"
   },
-  "repository": "code42day/datepicker",
+  "repository": "pirxpilot/datepicker",
   "keywords": [
     "browser",
     "datepicker",

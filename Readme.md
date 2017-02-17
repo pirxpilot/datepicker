@@ -8,17 +8,17 @@
   
 ## Installation
 
-    $ npm install --save code42day-datepicker
+    $ npm install --save @pirxpilot/datepicker
 
 ## License
 
   MIT
 
-[npm-image]: https://img.shields.io/npm/v/code42day-datepicker.svg
-[npm-url]: https://npmjs.org/package/code42day-datepicker
+[npm-image]: https://img.shields.io/npm/v/@pirxpilot/datepicker.svg
+[npm-url]: https://npmjs.org/package/@pirxpilot/datepicker
 
-[travis-url]: https://travis-ci.org/code42day/datepicker
-[travis-image]: https://img.shields.io/travis/code42day/datepicker.svg
+[travis-url]: https://travis-ci.org/pirxpilot/datepicker
+[travis-image]: https://img.shields.io/travis/pirxpilot/datepicker.svg
 
-[gemnasium-image]: https://img.shields.io/gemnasium/code42day/datepicker.svg
-[gemnasium-url]: https://gemnasium.com/code42day/datepicker
+[gemnasium-image]: https://img.shields.io/gemnasium/pirxpilot/datepicker.svg
+[gemnasium-url]: https://gemnasium.com/pirxpilot/datepicker
