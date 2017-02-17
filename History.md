@@ -1,4 +1,11 @@
 
+1.1.1 / 2017-02-16
+==================
+
+ * change name to @pirxpilot/datepicker
+ * add jshint to dependencies
+ * add missing Travis CI config
+
 1.1.0 / 2017-02-03
 ==================
 

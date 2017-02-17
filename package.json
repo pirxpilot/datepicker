@@ -1,6 +1,6 @@
 {
   "name": "@pirxpilot/datepicker",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Datepicker ui component built on component/calendar",
   "scripts": {
     "test": "make check"
