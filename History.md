@@ -1,4 +1,11 @@
 
+2.0.0 / 2018-11-30
+==================
+
+ * remove yarn.lock file
+ * use stable node version for Travis CI
+ * rewrite in ES6
+
 1.1.2 / 2017-03-19
 ==================
 
