@@ -1,13 +1,16 @@
-var Picker = require('picker');
-var Calendar = require('calendar');
-var inherit = require('inherit');
+const Picker = require('popup-picker');
+const Calendar = require('@pirxpilot/calendar');
 
-module.exports = Datepicker;
+class Datepicker extends Picker {
+  static of(...args) {
+    return new Datepicker(...args);
+  }
 
-function Datepicker(el) {
-  if (!(this instanceof Datepicker)) return new Datepicker(el);
-  this.calendar = new Calendar();
-  Picker.call(this, el, this.calendar);
+  constructor(el, options) {
+    const calendar = new Calendar(options);
+    super(el, calendar);
+    this.calendar = calendar;
+  }
 }
 
-inherit(Datepicker, Picker);
+module.exports = Datepicker;
