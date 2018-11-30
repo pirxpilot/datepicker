@@ -12,12 +12,12 @@
     </style>
   </head>
   <body>
-    <input type="text" name="date" placeholder="Choose a date">
-    
+    <input type="text" name="date" placeholder="Choose a date" autocomplete="off">
+
     <script>
-      var picker = require('datepicker');
+      var Picker = require('datepicker');
       var el = document.querySelector('[name=date]');
-      picker(el).on('change', function(v) {
+      Picker.of(el).on('change', function(v) {
         el.value = v.toDateString();
       });
     </script>

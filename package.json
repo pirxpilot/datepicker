@@ -12,19 +12,13 @@
     "calendar"
   ],
   "dependencies": {
-    "component-inherit": "~0",
-    "@pirxpilot/calendar": "^1.0.2",
-    "popup-picker": "^1.0.2"
-  },
-  "browser": {
-    "calendar": "@pirxpilot/calendar",
-    "picker": "popup-picker",
-    "inherit": "component-inherit"
+    "@pirxpilot/calendar": "~2",
+    "popup-picker": "~2"
   },
   "license": "MIT",
   "devDependencies": {
     "jshint": "^2.9.4",
-    "stringify": "^3.1.0"
+    "stringify": "~5"
   },
   "files": [
     "index.js"

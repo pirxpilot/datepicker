@@ -4,6 +4,7 @@ SRC=index.js
 CSS= \
 	node_modules/@pirxpilot/tip/tip.css \
 	node_modules/@pirxpilot/calendar/lib/calendar.css \
+	build/aurora-calendar.css \
 	node_modules/popup-picker/picker.css
 
 all: check compile
@@ -19,7 +20,7 @@ build/build.css: $(CSS) | node_modules build
 	cat $^ > $@
 
 build/build.js: $(SRC) | node_modules build
-	browserify --require ./index.js:$(PROJECT) --outfile $@
+	browserify --debug --require ./index.js:$(PROJECT) --outfile $@
 
 .DELETE_ON_ERROR: build/build.js
 
@@ -32,6 +33,13 @@ lint: | node_modules
 	$(NODE_BIN)/jshint $(SRC)
 
 clean:
-	rm -fr build node_modules
+	rm -fr build
+
+distclean: clean
+	rm -fr node_modules
+
+build/aurora-calendar.css:
+	curl --compress -o $@ \
+		https://raw.githubusercontent.com/component/aurora-calendar/master/aurora-calendar.css
 
 .PHONY: clean lint check all compile
