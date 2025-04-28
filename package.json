@@ -2,6 +2,8 @@
   "name": "@pirxpilot/datepicker",
   "version": "2.0.0",
   "description": "Datepicker ui component built on component/calendar",
+  "type": "module",
+  "exports": "./index.js",
   "scripts": {
     "test": "make check"
   },
@@ -15,8 +17,8 @@
     "calendar"
   ],
   "dependencies": {
-    "@pirxpilot/calendar": "~2",
-    "popup-picker": "~2"
+    "@pirxpilot/calendar": "~3",
+    "popup-picker": "~3"
   },
   "license": "MIT",
   "files": [

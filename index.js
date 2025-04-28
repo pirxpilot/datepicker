@@ -1,7 +1,7 @@
-const Picker = require('popup-picker');
-const Calendar = require('@pirxpilot/calendar');
+import Calendar from '@pirxpilot/calendar';
+import Picker from 'popup-picker';
 
-class Datepicker extends Picker {
+export default class Datepicker extends Picker {
   static of(...args) {
     return new Datepicker(...args);
   }
@@ -12,5 +12,3 @@ class Datepicker extends Picker {
     this.calendar = calendar;
   }
 }
-
-module.exports = Datepicker;
