@@ -1,6 +1,5 @@
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Dependency Status][gemnasium-image]][gemnasium-url]
+[![Build Status][build-image]][build-url]
 
 # datepicker
 
@@ -14,11 +13,8 @@
 
   MIT
 
-[npm-image]: https://img.shields.io/npm/v/@pirxpilot/datepicker.svg
+[npm-image]: https://img.shields.io/npm/v/@pirxpilot/datepicker
 [npm-url]: https://npmjs.org/package/@pirxpilot/datepicker
 
-[travis-url]: https://travis-ci.org/pirxpilot/datepicker
-[travis-image]: https://img.shields.io/travis/pirxpilot/datepicker.svg
-
-[gemnasium-image]: https://img.shields.io/gemnasium/pirxpilot/datepicker.svg
-[gemnasium-url]: https://gemnasium.com/pirxpilot/datepicker
+[build-url]: https://github.com/pirxpilot/datepicker/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/actions/workflow/status/pirxpilot/datepicker/check.yaml?branch=main

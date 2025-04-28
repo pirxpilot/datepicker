@@ -15,11 +15,9 @@
     <input type="text" name="date" placeholder="Choose a date" autocomplete="off">
 
     <script>
-      var Picker = require('datepicker');
-      var el = document.querySelector('[name=date]');
-      Picker.of(el).on('change', function(v) {
-        el.value = v.toDateString();
-      });
+      const Picker = datepicker;
+      const el = document.querySelector('[name=date]');
+      Picker.of(el).on('change', v => el.value = v.toDateString());
     </script>
   </body>
 </html>

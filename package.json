@@ -5,7 +5,10 @@
   "scripts": {
     "test": "make check"
   },
-  "repository": "pirxpilot/datepicker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirxpilot/datepicker.git"
+  },
   "keywords": [
     "browser",
     "datepicker",
@@ -16,11 +19,11 @@
     "popup-picker": "~2"
   },
   "license": "MIT",
-  "devDependencies": {
-    "jshint": "^2.9.4",
-    "stringify": "~5"
-  },
   "files": [
     "index.js"
-  ]
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "esbuild": "^0.25.3"
+  }
 }

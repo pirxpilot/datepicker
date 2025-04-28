@@ -20,17 +20,24 @@ build/build.css: $(CSS) | node_modules build
 	cat $^ > $@
 
 build/build.js: $(SRC) | node_modules build
-	browserify --debug --require ./index.js:$(PROJECT) --outfile $@
-
-.DELETE_ON_ERROR: build/build.js
+	$(NODE_BIN)/esbuild \
+		--bundle \
+		--define:DEBUG="true" \
+		--global-name=$(PROJECT) \
+		--outfile=$@ \
+		index.js
 
 $(CSS): | node_modules
 
 node_modules: package.json
-	yarn && touch $@
+	yarn
+	touch $@
 
 lint: | node_modules
-	$(NODE_BIN)/jshint $(SRC)
+	$(NODE_BIN)/biome ci
+
+format: | node_modules
+	$(NODE_BIN)/biome check --fix
 
 clean:
 	rm -fr build
@@ -39,7 +46,7 @@ distclean: clean
 	rm -fr node_modules
 
 build/aurora-calendar.css:
-	curl --compress -o $@ \
+	curl -o $@ \
 		https://raw.githubusercontent.com/component/aurora-calendar/master/aurora-calendar.css
 
-.PHONY: clean lint check all compile
+.PHONY: clean format lint check all compile
