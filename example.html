@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <title>Datepicker</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="build/build.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="build/build.css" />
     <script src="build/build.js"></script>
     <style>
       body {
@@ -12,12 +12,12 @@
     </style>
   </head>
   <body>
-    <input type="text" name="date" placeholder="Choose a date" autocomplete="off">
+    <input type="text" name="date" placeholder="Choose a date" autocomplete="off" />
 
     <script>
       const Picker = datepicker.default;
       const el = document.querySelector('[name=date]');
-      Picker.of(el).on('change', v => el.value = v.toDateString());
+      Picker.of(el).on('change', v => (el.value = v.toDateString()));
     </script>
   </body>
 </html>
