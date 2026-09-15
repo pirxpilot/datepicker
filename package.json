@@ -2,30 +2,31 @@
   "name": "@pirxpilot/datepicker",
   "version": "3.0.1",
   "description": "Datepicker ui component built on component/calendar",
-  "type": "module",
-  "exports": "./index.js",
-  "scripts": {
-    "test": "make check"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pirxpilot/datepicker.git"
-  },
   "keywords": [
     "browser",
     "datepicker",
     "calendar"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirxpilot/datepicker.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": "./index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "make check"
+  },
   "dependencies": {
     "@pirxpilot/calendar": "~3",
     "popup-picker": "~3"
   },
-  "license": "MIT",
-  "files": [
-    "index.js"
-  ],
   "devDependencies": {
-    "@biomejs/biome": "2.4.4",
-    "esbuild": "^0.25.3"
+    "@biomejs/biome": "2.5.13",
+    "@pirxpilot/tip": "^4.1.1",
+    "esbuild": "^0.28.1"
   }
 }
